@@ -9,7 +9,7 @@ import Foundation
 
 public class Service {
  
-    func show() {
+    public func show() {
         print("Hello 1")
     }
 }
