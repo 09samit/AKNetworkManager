@@ -7,6 +7,9 @@
 
 import Foundation
 
-class Service {
-    
+public class Service {
+ 
+    func show() {
+        print("Hello")
+    }
 }
