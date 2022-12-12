@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2807B81629473B87003ABDBC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807B81529473B87003ABDBC /* NetworkManager.swift */; };
 		28F732E32945C272007B059D /* AKNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F732E22945C272007B059D /* AKNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F732EA2945C394007B059D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F732E92945C394007B059D /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2807B81529473B87003ABDBC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		28F732DF2945C272007B059D /* AKNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F732E22945C272007B059D /* AKNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKNetworkManager.h; sourceTree = "<group>"; };
 		28F732E92945C394007B059D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -28,9 +30,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2807B81129473B2B003ABDBC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2807B81329473B40003ABDBC /* Public */,
+				2807B81229473B37003ABDBC /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2807B81229473B37003ABDBC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2807B81329473B40003ABDBC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				2807B81429473B68003ABDBC /* NetworkManager */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		2807B81429473B68003ABDBC /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				2807B81529473B87003ABDBC /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		28F732D52945C272007B059D = {
 			isa = PBXGroup;
 			children = (
+				2807B81129473B2B003ABDBC /* Source */,
 				28F732E12945C272007B059D /* AKNetworkManager */,
 				28F732E02945C272007B059D /* Products */,
 			);
@@ -133,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2807B81629473B87003ABDBC /* NetworkManager.swift in Sources */,
 				28F732EA2945C394007B059D /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
