@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AKNetworkManager"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "Network Manager"
   spec.description  = "A wrapper class for network manager."
   spec.homepage     = "https://www.hexalitics.com"
@@ -10,6 +10,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/09samit/AKNetworkManager.git", :tag => "#{spec.version}" }
   spec.swift_version = "4.2"
-  spec.source_files  = "AKNetworkManager/**/*.swift"
+  spec.source_files  = ["Source/**/*.{swift}", "AKNetworkManager/**/*.swift"]
 
 end
