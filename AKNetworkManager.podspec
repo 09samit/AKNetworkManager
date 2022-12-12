@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AKNetworkManager"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "Network Manager"
   spec.description  = "A wrapper class for network manager."
   spec.homepage     = "https://www.hexalitics.com"
