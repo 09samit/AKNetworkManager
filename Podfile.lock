@@ -1,0 +1,16 @@
+PODS:
+  - AKNetworkManager (0.0.8)
+
+DEPENDENCIES:
+  - AKNetworkManager (from `./AKNetworkManager.podspec`)
+
+EXTERNAL SOURCES:
+  AKNetworkManager:
+    :path: "./AKNetworkManager.podspec"
+
+SPEC CHECKSUMS:
+  AKNetworkManager: 9a460274d16106d8a53bdfad633b8d2c220808a1
+
+PODFILE CHECKSUM: 23fe703f58c494b13f2f63cc93803529d6e020d9
+
+COCOAPODS: 1.11.3

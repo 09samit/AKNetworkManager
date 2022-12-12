@@ -9,7 +9,7 @@ import Foundation
 
 public class NetworkManager {
     
-    static let shared = NetworkManager()
+    public static let shared = NetworkManager()
     
     public func execute() {
         print("Execution")
