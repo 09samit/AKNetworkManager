@@ -14,6 +14,7 @@
 		2807B825294751BE003ABDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2807B823294751BE003ABDBC /* Main.storyboard */; };
 		2807B827294751BF003ABDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2807B826294751BF003ABDBC /* Assets.xcassets */; };
 		2807B82A294751BF003ABDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2807B828294751BF003ABDBC /* LaunchScreen.storyboard */; };
+		28DC4F51294B35E3009CF8D8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC4F50294B35E3009CF8D8 /* String+extension.swift */; };
 		28F732E32945C272007B059D /* AKNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F732E22945C272007B059D /* AKNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F732EA2945C394007B059D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F732E92945C394007B059D /* Service.swift */; };
 		9307BA594483506B6DD1C0E7 /* Pods_AKNetworkManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46BEEFAB8E9CF6620C0B07 /* Pods_AKNetworkManagerExample.framework */; };
@@ -30,6 +31,7 @@
 		2807B826294751BF003ABDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2807B829294751BF003ABDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2807B82B294751BF003ABDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DC4F50294B35E3009CF8D8 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		28F732DF2945C272007B059D /* AKNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F732E22945C272007B059D /* AKNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKNetworkManager.h; sourceTree = "<group>"; };
 		28F732E92945C394007B059D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2807B81529473B87003ABDBC /* NetworkManager.swift */,
+				28DC4F50294B35E3009CF8D8 /* String+extension.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -145,7 +148,6 @@
 				2FE50019917A7E043F461BFD /* Pods-AKNetworkManagerExample.debug.xcconfig */,
 				4FA445FE4352177033E90227 /* Pods-AKNetworkManagerExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -348,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2807B81629473B87003ABDBC /* NetworkManager.swift in Sources */,
+				28DC4F51294B35E3009CF8D8 /* String+extension.swift in Sources */,
 				28F732EA2945C394007B059D /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
