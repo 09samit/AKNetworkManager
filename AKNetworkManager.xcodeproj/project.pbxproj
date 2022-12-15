@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F5E1A415985E0574286F18 /* Pods_AKNetworkManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEC7D39F4F804E863AAB7CD /* Pods_AKNetworkManagerExample.framework */; };
 		2807B81629473B87003ABDBC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807B81529473B87003ABDBC /* NetworkManager.swift */; };
 		2807B81E294751BE003ABDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807B81D294751BE003ABDBC /* AppDelegate.swift */; };
 		2807B820294751BE003ABDBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807B81F294751BE003ABDBC /* SceneDelegate.swift */; };
@@ -17,11 +18,11 @@
 		28DC4F51294B35E3009CF8D8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC4F50294B35E3009CF8D8 /* String+extension.swift */; };
 		28F732E32945C272007B059D /* AKNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F732E22945C272007B059D /* AKNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F732EA2945C394007B059D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F732E92945C394007B059D /* Service.swift */; };
-		9307BA594483506B6DD1C0E7 /* Pods_AKNetworkManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46BEEFAB8E9CF6620C0B07 /* Pods_AKNetworkManagerExample.framework */; };
-		9DA562ED3ADD1B14DCE10E02 /* Pods_AKNetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C94E03A058F542EB7F7DB /* Pods_AKNetworkManager.framework */; };
+		DBA9159C642898A670BA3606 /* Pods_AKNetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BF2798B5F2323EB3601629 /* Pods_AKNetworkManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06BF2798B5F2323EB3601629 /* Pods_AKNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2807B81529473B87003ABDBC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2807B81B294751BE003ABDBC /* AKNetworkManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKNetworkManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2807B81D294751BE003ABDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +36,11 @@
 		28F732DF2945C272007B059D /* AKNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F732E22945C272007B059D /* AKNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKNetworkManager.h; sourceTree = "<group>"; };
 		28F732E92945C394007B059D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		2FE50019917A7E043F461BFD /* Pods-AKNetworkManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManagerExample.debug.xcconfig"; path = "Target Support Files/Pods-AKNetworkManagerExample/Pods-AKNetworkManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4FA445FE4352177033E90227 /* Pods-AKNetworkManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManagerExample.release.xcconfig"; path = "Target Support Files/Pods-AKNetworkManagerExample/Pods-AKNetworkManagerExample.release.xcconfig"; sourceTree = "<group>"; };
-		8FD421A842EB3435416E1C2C /* Pods-AKNetworkManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManager.release.xcconfig"; path = "Target Support Files/Pods-AKNetworkManager/Pods-AKNetworkManager.release.xcconfig"; sourceTree = "<group>"; };
-		C19C94E03A058F542EB7F7DB /* Pods_AKNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC46BEEFAB8E9CF6620C0B07 /* Pods_AKNetworkManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKNetworkManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF4200C79D17BF02F09036A5 /* Pods-AKNetworkManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManager.debug.xcconfig"; path = "Target Support Files/Pods-AKNetworkManager/Pods-AKNetworkManager.debug.xcconfig"; sourceTree = "<group>"; };
+		2CEC7D39F4F804E863AAB7CD /* Pods_AKNetworkManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKNetworkManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640C69EFFA1F756C513161EA /* Pods-AKNetworkManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManager.debug.xcconfig"; path = "Target Support Files/Pods-AKNetworkManager/Pods-AKNetworkManager.debug.xcconfig"; sourceTree = "<group>"; };
+		7384BD396135F8328B47FD3D /* Pods-AKNetworkManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManagerExample.release.xcconfig"; path = "Target Support Files/Pods-AKNetworkManagerExample/Pods-AKNetworkManagerExample.release.xcconfig"; sourceTree = "<group>"; };
+		8644006CD271089369C8116E /* Pods-AKNetworkManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManagerExample.debug.xcconfig"; path = "Target Support Files/Pods-AKNetworkManagerExample/Pods-AKNetworkManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F3B2A9FE23038550C3A3CA65 /* Pods-AKNetworkManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManager.release.xcconfig"; path = "Target Support Files/Pods-AKNetworkManager/Pods-AKNetworkManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9307BA594483506B6DD1C0E7 /* Pods_AKNetworkManagerExample.framework in Frameworks */,
+				18F5E1A415985E0574286F18 /* Pods_AKNetworkManagerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA562ED3ADD1B14DCE10E02 /* Pods_AKNetworkManager.framework in Frameworks */,
+				DBA9159C642898A670BA3606 /* Pods_AKNetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 				2807B81C294751BE003ABDBC /* AKNetworkManagerExample */,
 				28F732E02945C272007B059D /* Products */,
 				48072863C8322CC818D015A8 /* Pods */,
-				E967FDEEBED75C2095FE49BC /* Frameworks */,
+				395F6F5A12A82D0515FE15DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,24 +140,24 @@
 			path = AKNetworkManager;
 			sourceTree = "<group>";
 		};
+		395F6F5A12A82D0515FE15DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06BF2798B5F2323EB3601629 /* Pods_AKNetworkManager.framework */,
+				2CEC7D39F4F804E863AAB7CD /* Pods_AKNetworkManagerExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48072863C8322CC818D015A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF4200C79D17BF02F09036A5 /* Pods-AKNetworkManager.debug.xcconfig */,
-				8FD421A842EB3435416E1C2C /* Pods-AKNetworkManager.release.xcconfig */,
-				2FE50019917A7E043F461BFD /* Pods-AKNetworkManagerExample.debug.xcconfig */,
-				4FA445FE4352177033E90227 /* Pods-AKNetworkManagerExample.release.xcconfig */,
+				640C69EFFA1F756C513161EA /* Pods-AKNetworkManager.debug.xcconfig */,
+				F3B2A9FE23038550C3A3CA65 /* Pods-AKNetworkManager.release.xcconfig */,
+				8644006CD271089369C8116E /* Pods-AKNetworkManagerExample.debug.xcconfig */,
+				7384BD396135F8328B47FD3D /* Pods-AKNetworkManagerExample.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E967FDEEBED75C2095FE49BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C19C94E03A058F542EB7F7DB /* Pods_AKNetworkManager.framework */,
-				EC46BEEFAB8E9CF6620C0B07 /* Pods_AKNetworkManagerExample.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,11 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2807B82C294751BF003ABDBC /* Build configuration list for PBXNativeTarget "AKNetworkManagerExample" */;
 			buildPhases = (
-				9E42AED064365B405F52D8C8 /* [CP] Check Pods Manifest.lock */,
+				08D4683DF7544903BBFEFAF1 /* [CP] Check Pods Manifest.lock */,
 				2807B817294751BE003ABDBC /* Sources */,
 				2807B818294751BE003ABDBC /* Frameworks */,
 				2807B819294751BE003ABDBC /* Resources */,
-				D60F26EAE861DFC5E9FDECB3 /* [CP] Embed Pods Frameworks */,
+				C49D4A836D0E38F728191359 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28F732E62945C272007B059D /* Build configuration list for PBXNativeTarget "AKNetworkManager" */;
 			buildPhases = (
-				575FF7F8463B6A80A1F3B1AC /* [CP] Check Pods Manifest.lock */,
+				1CC08ADC3DD68C85B7380646 /* [CP] Check Pods Manifest.lock */,
 				28F732DA2945C272007B059D /* Headers */,
 				28F732DB2945C272007B059D /* Sources */,
 				28F732DC2945C272007B059D /* Frameworks */,
@@ -271,29 +271,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		575FF7F8463B6A80A1F3B1AC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AKNetworkManager-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E42AED064365B405F52D8C8 /* [CP] Check Pods Manifest.lock */ = {
+		08D4683DF7544903BBFEFAF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,7 +293,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D60F26EAE861DFC5E9FDECB3 /* [CP] Embed Pods Frameworks */ = {
+		1CC08ADC3DD68C85B7380646 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AKNetworkManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49D4A836D0E38F728191359 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,7 +379,7 @@
 /* Begin XCBuildConfiguration section */
 		2807B82D294751BF003ABDBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FE50019917A7E043F461BFD /* Pods-AKNetworkManagerExample.debug.xcconfig */;
+			baseConfigurationReference = 8644006CD271089369C8116E /* Pods-AKNetworkManagerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -407,7 +407,7 @@
 		};
 		2807B82E294751BF003ABDBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FA445FE4352177033E90227 /* Pods-AKNetworkManagerExample.release.xcconfig */;
+			baseConfigurationReference = 7384BD396135F8328B47FD3D /* Pods-AKNetworkManagerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,7 +555,7 @@
 		};
 		28F732E72945C272007B059D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF4200C79D17BF02F09036A5 /* Pods-AKNetworkManager.debug.xcconfig */;
+			baseConfigurationReference = 640C69EFFA1F756C513161EA /* Pods-AKNetworkManager.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,7 +585,7 @@
 		};
 		28F732E82945C272007B059D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FD421A842EB3435416E1C2C /* Pods-AKNetworkManager.release.xcconfig */;
+			baseConfigurationReference = F3B2A9FE23038550C3A3CA65 /* Pods-AKNetworkManager.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

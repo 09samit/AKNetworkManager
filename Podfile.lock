@@ -1,16 +1,24 @@
 PODS:
-  - AKNetworkManager (0.0.8)
+  - AKNetworkManager (0.0.9):
+    - Alamofire (= 5.6.4)
+  - Alamofire (5.6.4)
 
 DEPENDENCIES:
   - AKNetworkManager (from `./AKNetworkManager.podspec`)
+  - Alamofire (= 5.6.4)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   AKNetworkManager:
     :path: "./AKNetworkManager.podspec"
 
 SPEC CHECKSUMS:
-  AKNetworkManager: 9a460274d16106d8a53bdfad633b8d2c220808a1
+  AKNetworkManager: eb010592fd8f64498d5486f4cdce720e66d04bb2
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
 
-PODFILE CHECKSUM: 23fe703f58c494b13f2f63cc93803529d6e020d9
+PODFILE CHECKSUM: 7b7b2f2cdbf43acb50dac39d6e5be63911fa6505
 
 COCOAPODS: 1.11.3

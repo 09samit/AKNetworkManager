@@ -11,5 +11,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/09samit/AKNetworkManager.git", :tag => "#{spec.version}" }
   spec.swift_version = "4.2"
   spec.source_files  = ["Source/**/*.{swift}", "AKNetworkManager/**/*.swift"]
-
+  spec.dependency "Alamofire", '5.6.4'
 end

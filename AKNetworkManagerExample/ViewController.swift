@@ -10,8 +10,6 @@ import AKNetworkManager
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let service = Service()
-        service.show()
     }
 }
 

@@ -3,6 +3,7 @@
 
 target 'AKNetworkManager' do
     use_frameworks!
+    pod 'Alamofire', '5.6.4'
 end
 
 target 'AKNetworkManagerExample' do
