@@ -117,18 +117,21 @@ public class NetworkManager {
                 headers["access-token"] = token
             }
         }
-        
-        return AF.request(NetworkManager.shared.baseURL+API, method:method, parameters: param, encoding: encoding, headers: headers) .responseJSON { [weak self] (response) in
-            
-            if let err = response.error  {
-                if let desc = err.errorDescription {
+    
+        return AF.request(NetworkManager.shared.baseURL+API,
+                          method:method,
+                          parameters: param,
+                          encoding: encoding,
+                          headers: headers)
+        .responseData(completionHandler: { [weak self] response in
+            if let error = response.error {
+                if let desc = error.errorDescription {
                     block(DataResult.Failure(error: DataError.NetworkError(desc)))
                 } else {
                     block(DataResult.Failure(error: DataError.UnknownError("Unknow error")))
                 }
                 return
             }
-            
             if let data = response.data {
                 do {
                     if let string = String(data: data, encoding: String.Encoding.utf8) {
@@ -160,7 +163,7 @@ public class NetworkManager {
                     self?.validateJsonWithBlankStructure(ForData: data, block: block)
                 }
             }
-        }
+        })
     }
     
     func uploadRequest<U>(api:String, params: [String: Any], isAuthorizationRequired:Bool = true, progressBlock: ProgressCompletionHandler? = nil, block: @escaping DataCompletionHandler<U>) {
@@ -216,49 +219,44 @@ public class NetworkManager {
         }, to: NetworkManager.shared.baseURL + api,
             method: .post,
             headers: headers)
-            .responseJSON { (response) in
-                if let err = response.error  {
-                    if let desc = err.errorDescription {
-                        block(DataResult.Failure(error: DataError.NetworkError(desc)))
-                    } else {
-                        block(DataResult.Failure(error: DataError.UnknownError("Unknow error")))
-                    }
-                    return
+        .responseData(completionHandler: { response in
+            if let err = response.error  {
+                if let desc = err.errorDescription {
+                    block(DataResult.Failure(error: DataError.NetworkError(desc)))
+                } else {
+                    block(DataResult.Failure(error: DataError.UnknownError("Unknow error")))
                 }
-                
-                if let data = response.data {
-                    do {
-                        
-                        if let string = String(data: data, encoding: String.Encoding.utf8) {
-                           print(string)
-                        }
-                        
-                        let result: ResponseObject<U> = try JSONDecoder().decode(ResponseObject<U>.self, from: data)
-                        if result.status != 200 {
-                            block(DataResult.Failure(error: DataError.UnknownError(result.message ?? "Unknow error!")))
-                        } else {
-                            block(DataResult.Success(result: result))
-                        }
-                    } catch  {
-                        
-                        do {
-                               let result: ResponseObject<BlankResult> = try JSONDecoder().decode(ResponseObject<BlankResult>.self, from: data)
-                               if result.status != 200 {
-                                   block(DataResult.Failure(error: DataError.UnknownError(result.message ?? "Unknow error!")))
-                               } else {
-                                   block(DataResult.Failure(error: DataError.UnknownError("Response is not in expected format")))
-                               }
-                               
-                           } catch  {
-                               block(DataResult.Failure(error: DataError.ParsingRequest("Unable to parse.")))
-                           }
-                    }
-                }
-        }.uploadProgress { progress in
-            if let progressBlock = progressBlock {
-                progressBlock(progress.fractionCompleted)
+                return
             }
-        }
+            if let data = response.data {
+                do {
+                    if let string = String(data: data, encoding: String.Encoding.utf8) {
+                       print(string)
+                    }
+                    
+                    let result: ResponseObject<U> = try JSONDecoder().decode(ResponseObject<U>.self, from: data)
+                    if result.status != 200 {
+                        block(DataResult.Failure(error: DataError.UnknownError(result.message ?? "Unknow error!")))
+                    } else {
+                        block(DataResult.Success(result: result))
+                    }
+                } catch  {
+                    do {
+                           let result: ResponseObject<BlankResult> = try JSONDecoder().decode(ResponseObject<BlankResult>.self, from: data)
+                           if result.status != 200 {
+                               block(DataResult.Failure(error: DataError.UnknownError(result.message ?? "Unknow error!")))
+                           } else {
+                               block(DataResult.Failure(error: DataError.UnknownError("Response is not in expected format")))
+                           }
+                       } catch  {
+                           block(DataResult.Failure(error: DataError.ParsingRequest("Unable to parse.")))
+                       }
+                }
+            }
+        })
+        .uploadProgress(closure: { progress in
+            progressBlock?(progress.fractionCompleted)
+        })
     }
     
     func cancelRequest() {
