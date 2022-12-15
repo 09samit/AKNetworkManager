@@ -93,6 +93,10 @@ public class NetworkManager {
                       block: @escaping DataCompletionHandler<U>
                       ) -> DataRequest {
      
+        if baseURL.isEmpty {
+            fatalError("Configure URL")
+        }
+        
         print("Base API ----\(NetworkManager.shared.baseURL+API)")
         var param = [String:Any]()
         if let paramLoc = parameters {
@@ -167,6 +171,10 @@ public class NetworkManager {
     }
     
     func uploadRequest<U>(api:String, params: [String: Any], isAuthorizationRequired:Bool = true, progressBlock: ProgressCompletionHandler? = nil, block: @escaping DataCompletionHandler<U>) {
+        
+        if baseURL.isEmpty {
+            fatalError("Configure URL")
+        }
         
         print("API ----\(NetworkManager.shared.baseURL+api)")
         print("Parameter ----\(params)")
