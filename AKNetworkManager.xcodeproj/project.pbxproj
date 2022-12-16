@@ -17,7 +17,6 @@
 		2807B82A294751BF003ABDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2807B828294751BF003ABDBC /* LaunchScreen.storyboard */; };
 		28DC4F51294B35E3009CF8D8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC4F50294B35E3009CF8D8 /* String+extension.swift */; };
 		28F732E32945C272007B059D /* AKNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F732E22945C272007B059D /* AKNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28F732EA2945C394007B059D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F732E92945C394007B059D /* Service.swift */; };
 		DBA9159C642898A670BA3606 /* Pods_AKNetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BF2798B5F2323EB3601629 /* Pods_AKNetworkManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		28DC4F50294B35E3009CF8D8 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		28F732DF2945C272007B059D /* AKNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F732E22945C272007B059D /* AKNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKNetworkManager.h; sourceTree = "<group>"; };
-		28F732E92945C394007B059D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		2CEC7D39F4F804E863AAB7CD /* Pods_AKNetworkManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKNetworkManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640C69EFFA1F756C513161EA /* Pods-AKNetworkManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManager.debug.xcconfig"; path = "Target Support Files/Pods-AKNetworkManager/Pods-AKNetworkManager.debug.xcconfig"; sourceTree = "<group>"; };
 		7384BD396135F8328B47FD3D /* Pods-AKNetworkManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKNetworkManagerExample.release.xcconfig"; path = "Target Support Files/Pods-AKNetworkManagerExample/Pods-AKNetworkManagerExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,13 +61,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2807B81129473B2B003ABDBC /* Source */ = {
+		2807B81129473B2B003ABDBC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				2807B81329473B40003ABDBC /* Public */,
 				2807B81229473B37003ABDBC /* Features */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		2807B81229473B37003ABDBC /* Features */ = {
@@ -113,7 +111,7 @@
 		28F732D52945C272007B059D = {
 			isa = PBXGroup;
 			children = (
-				2807B81129473B2B003ABDBC /* Source */,
+				2807B81129473B2B003ABDBC /* Sources */,
 				28F732E12945C272007B059D /* AKNetworkManager */,
 				2807B81C294751BE003ABDBC /* AKNetworkManagerExample */,
 				28F732E02945C272007B059D /* Products */,
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				28F732E22945C272007B059D /* AKNetworkManager.h */,
-				28F732E92945C394007B059D /* Service.swift */,
 			);
 			path = AKNetworkManager;
 			sourceTree = "<group>";
@@ -351,7 +348,6 @@
 			files = (
 				2807B81629473B87003ABDBC /* NetworkManager.swift in Sources */,
 				28DC4F51294B35E3009CF8D8 /* String+extension.swift in Sources */,
-				28F732EA2945C394007B059D /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
