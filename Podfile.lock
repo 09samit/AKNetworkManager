@@ -1,5 +1,5 @@
 PODS:
-  - AKNetworkManager (0.0.9):
+  - AKNetworkManager (0.0.11):
     - Alamofire (= 5.6.4)
   - Alamofire (5.6.4)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "./AKNetworkManager.podspec"
 
 SPEC CHECKSUMS:
-  AKNetworkManager: eb010592fd8f64498d5486f4cdce720e66d04bb2
+  AKNetworkManager: 2f43e1a1e147106f2064a2bad5400ef515560ec6
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
 
 PODFILE CHECKSUM: 7b7b2f2cdbf43acb50dac39d6e5be63911fa6505

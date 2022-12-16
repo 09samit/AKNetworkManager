@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import AKNetworkManager
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        NetworkManager.shared.setup(url: "https://shmchat.com/api/", key: "#%2s$h#1m2c$%ha^t5", version: "1")
+        
         return true
     }
 
