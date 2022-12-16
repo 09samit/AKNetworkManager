@@ -48,9 +48,9 @@ public enum DataResult<U:Codable>
 
 
 public struct ResponseObject<U:Codable>: Codable {
-    var status: Int64? = 0
-    var message: String? = ""
-    var data : U? = nil
+    public var status: Int64? = 0
+    public var message: String? = ""
+    public var data : U? = nil
     
     enum CodingKeys: String, CodingKey {
         case status
